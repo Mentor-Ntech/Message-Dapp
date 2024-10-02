@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { ethers } from "ethers";
 import contractABI from "./abi.json";
 import "./App.css";
@@ -8,7 +8,7 @@ function App() {
   const [newMessage, setNewMessage] = useState("");
 
   //address
-  const contractAddress = "0xbb17c0DE13a76eF57e9b00020f712A1740A8cf01";
+  const contractAddress = "0xdc52E7C1Fe19de598cF206Ab39CF93E61c48B565";
 
   // async function for accessing metamask in our browser
   async function requestAccount() {
@@ -70,9 +70,9 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    getMessage();
-  }, []);
+  // useEffect(() => {
+  //   getMessage();
+  // }, []);
 
   return (
     <div className="App">
